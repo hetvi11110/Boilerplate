@@ -1,5 +1,4 @@
-Html 5
-=======
+
 # Boilerplate
 
 HTML5
