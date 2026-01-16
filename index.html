@@ -1,42 +1,361 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sample HTML Page</title>
-    <meta name="description" content="This is an example website." />
+    <title>Comprehensive HTML Tags Example</title>
+    <meta
+      name="description"
+      content="A complete guide to HTML tags with examples and best practices."
+    />
     <link rel="stylesheet" href="styles.css" />
     <script src="script.js" defer></script>
-
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://example.com/" />
-    <meta property="og:title" content="Project Title" />
-    <meta property="og:description" content="Optimized for the 2026 web." />
-    <meta property="og:image" content="https://example.com/og-image.jpg" />
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 20px;
+      }
+      section {
+        margin-bottom: 40px;
+        border: 1px solid #ccc;
+        padding: 10px;
+      }
+      h2 {
+        color: #333;
+      }
+      code {
+        background: #f4f4f4;
+        padding: 2px 4px;
+      }
+      .example {
+        background: #e9f7ff;
+        padding: 10px;
+        margin: 10px 0;
+      }
+    </style>
   </head>
   <body>
     <header>
-      <h1>Welcome to My Sample Page</h1>
+      <h1>Comprehensive HTML Tags Guide</h1>
+      <p>
+        This page demonstrates all standard HTML5 tags with single examples and
+        best practices.
+      </p>
     </header>
+
+    <nav>
+      <ul>
+        <li><a href="#structure">Document Structure</a></li>
+        <li><a href="#headings">Headings</a></li>
+        <li><a href="#text">Text Formatting</a></li>
+        <li><a href="#links">Links and Anchors</a></li>
+        <li><a href="#images">Images and Media</a></li>
+        <li><a href="#lists">Lists</a></li>
+        <li><a href="#tables">Tables</a></li>
+        <li><a href="#forms">Forms</a></li>
+        <li><a href="#semantic">Semantic Elements</a></li>
+        <li><a href="#embedded">Embedded Content</a></li>
+        <li><a href="#interactive">Interactive Elements</a></li>
+      </ul>
+    </nav>
+
     <main>
-      <section>
-        <h2>About This Page</h2>
+      <section id="structure">
+        <h2>Document Structure</h2>
         <p>
-          This is a simple HTML page to demonstrate the structure of an HTML
-          document.
+          Best practice: Always include DOCTYPE, html with lang attribute, meta
+          charset, and viewport for responsive design.
         </p>
+        <div class="example">
+          <p>&lt;!DOCTYPE html&gt; - Declares HTML5 document type.</p>
+          <p>
+            &lt;html lang="en"&gt; - Root element with language attribute for
+            accessibility.
+          </p>
+          <p>&lt;head&gt; - Contains meta information.</p>
+          <p>&lt;meta charset="UTF-8"&gt; - Sets character encoding.</p>
+          <p>
+            &lt;meta name="viewport" content="width=device-width,
+            initial-scale=1.0"&gt; - Ensures responsive design.
+          </p>
+          <p>&lt;title&gt; - Sets page title in browser tab.</p>
+          <p>
+            &lt;link rel="stylesheet" href="styles.css"&gt; - Links external
+            CSS.
+          </p>
+          <p>
+            &lt;script src="script.js" defer&gt;&lt;/script&gt; - Includes
+            external JavaScript.
+          </p>
+          <p>
+            &lt;base href="https://example.com/"&gt; - Sets base URL for
+            relative links (rarely used).
+          </p>
+        </div>
       </section>
+
+      <section id="headings">
+        <h2>Headings</h2>
+        <p>
+          Best practice: Use headings hierarchically (h1 first, then h2, etc.)
+          for SEO and accessibility. Only one h1 per page.
+        </p>
+        <div class="example">
+          <h1>h1 - Main heading</h1>
+          <h2>h2 - Section heading</h2>
+          <h3>h3 - Subsection heading</h3>
+          <h4>h4 - Sub-subsection heading</h4>
+          <h5>h5 - Minor heading</h5>
+          <h6>h6 - Smallest heading</h6>
+        </div>
+      </section>
+
+      <section id="text">
+        <h2>Text Formatting</h2>
+        <p>
+          Best practice: Use semantic elements like &lt;strong&gt; and
+          &lt;em&gt; instead of &lt;b&gt; and &lt;i&gt; for better
+          accessibility.
+        </p>
+        <div class="example">
+          <p>&lt;p&gt;This is a paragraph.&lt;/p&gt;</p>
+          <p>&lt;br&gt; - Line break</p>
+          <hr />
+          <p>&lt;strong&gt;Strong emphasis&lt;/strong&gt; - Important text</p>
+          <p>&lt;em&gt;Emphasized text&lt;/em&gt; - Stress emphasis</p>
+          <p>
+            &lt;b&gt;Bold text&lt;/b&gt; - Stylistic bold (use &lt;strong&gt;
+            instead)
+          </p>
+          <p>
+            &lt;i&gt;Italic text&lt;/i&gt; - Stylistic italic (use &lt;em&gt;
+            instead)
+          </p>
+          <p>&lt;u&gt;Underlined text&lt;/u&gt; - Underline</p>
+          <p>&lt;s&gt;Strikethrough text&lt;/s&gt; - Strikethrough</p>
+          <p>&lt;mark&gt;Marked text&lt;/mark&gt; - Highlighted text</p>
+          <p>H&lt;sub&gt;2&lt;/sub&gt;O - Subscript</p>
+          <p>E=mc&lt;sup&gt;2&lt;/sup&gt; - Superscript</p>
+          <p>&lt;small&gt;Small text&lt;/small&gt; - Fine print</p>
+          <pre>&lt;pre&gt;Preformatted text&lt;/pre&gt;</pre>
+          <p>&lt;code&gt;console.log('Hello');&lt;/code&gt; - Code snippet</p>
+          <p>Press &lt;kbd&gt;Ctrl+C&lt;/kbd&gt; - Keyboard input</p>
+          <p>&lt;samp&gt;Error 404&lt;/samp&gt; - Sample output</p>
+          <p>&lt;var&gt;x&lt;/var&gt; - Variable</p>
+          <p>&lt;cite&gt;Book Title&lt;/cite&gt; - Citation</p>
+          <p>&lt;q&gt;This is a quote.&lt;/q&gt; - Inline quotation</p>
+          <blockquote>
+            &lt;blockquote&gt;This is a block quotation.&lt;/blockquote&gt;
+          </blockquote>
+          <p>
+            &lt;abbr title="HyperText Markup Language"&gt;HTML&lt;/abbr&gt; -
+            Abbreviation
+          </p>
+          <address>&lt;address&gt;123 Main St&lt;/address&gt;</address>
+        </div>
+      </section>
+
+      <section id="links">
+        <h2>Links and Anchors</h2>
+        <p>
+          Best practice: Use descriptive link text for accessibility. Include
+          rel attributes for security.
+        </p>
+        <div class="example">
+          <a href="https://example.com">Visit Example</a> - External link
+          <a href="#structure">Jump to Structure</a> - Internal anchor
+          <a href="mailto:user@example.com">Email me</a> - Email link
+          <a href="tel:+1234567890">Call me</a> - Phone link
+          <a href="document.pdf" download>Download PDF</a> - Download link
+        </div>
+      </section>
+
+      <section id="images">
+        <h2>Images and Media</h2>
+        <p>
+          Best practice: Always include alt text for accessibility. Use
+          responsive images with srcset.
+        </p>
+        <div class="example">
+          <img
+            src="placeholder.jpg"
+            alt="Placeholder image"
+            width="200"
+            height="150"
+          />
+          - Basic image
+          <picture>
+            <source media="(min-width: 800px)" srcset="large.jpg" />
+            <img src="small.jpg" alt="Responsive image" />
+          </picture>
+          - Responsive image
+          <figure>
+            <img src="diagram.jpg" alt="Diagram" />
+            <figcaption>Figure caption</figcaption>
+          </figure>
+          - Figure with caption
+        </div>
+      </section>
+
+      <section id="lists">
+        <h2>Lists</h2>
+        <p>
+          Best practice: Use semantic lists for navigation and content
+          structure.
+        </p>
+        <div class="example">
+          <ul>
+            <li>Unordered list item</li>
+            <li>Another item</li>
+          </ul>
+          - Unordered list
+          <ol>
+            <li>Ordered list item</li>
+            <li>Second item</li>
+          </ol>
+          - Ordered list
+          <dl>
+            <dt>Term</dt>
+            <dd>Definition</dd>
+          </dl>
+          - Definition list
+        </div>
+      </section>
+
+      <section id="tables">
+        <h2>Tables</h2>
+        <p>
+          Best practice: Use tables only for tabular data, not layout. Include
+          headers and captions.
+        </p>
+        <div class="example">
+          <table>
+            <caption>
+              Sample Table
+            </caption>
+            <thead>
+              <tr>
+                <th>Name</th>
+                <th>Age</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>John</td>
+                <td>30</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section id="forms">
+        <h2>Forms</h2>
+        <p>
+          Best practice: Use labels for all inputs, validate on client and
+          server side.
+        </p>
+        <div class="example">
+          <form action="/submit" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required />
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" />
+
+            <textarea id="message" name="message"></textarea>
+
+            <select id="country" name="country">
+              <option value="us">USA</option>
+              <option value="ca">Canada</option>
+            </select>
+
+            <input type="checkbox" id="agree" name="agree" />
+            <label for="agree">I agree</label>
+
+            <input type="radio" name="gender" value="male" /> Male
+            <input type="radio" name="gender" value="female" /> Female
+
+            <button type="submit">Submit</button>
+          </form>
+        </div>
+      </section>
+
+      <section id="semantic">
+        <h2>Semantic Elements</h2>
+        <p>
+          Best practice: Use semantic elements for better SEO and accessibility.
+        </p>
+        <div class="example">
+          <header>Header content</header>
+          <nav>Navigation</nav>
+          <main>Main content</main>
+          <section>Section</section>
+          <article>Article content</article>
+          <aside>Sidebar</aside>
+          <footer>Footer content</footer>
+          <time datetime="2023-01-01">January 1, 2023</time>
+        </div>
+      </section>
+
+      <section id="embedded">
+        <h2>Embedded Content</h2>
+        <p>
+          Best practice: Provide fallbacks and ensure content is accessible.
+        </p>
+        <div class="example">
+          <iframe src="https://example.com" title="Embedded content"></iframe> -
+          Inline frame
+          <video controls>
+            <source src="video.mp4" type="video/mp4" />
+            Your browser does not support video.
+          </video>
+          - Video
+          <audio controls>
+            <source src="audio.mp3" type="audio/mpeg" />
+            Your browser does not support audio.
+          </audio>
+          - Audio
+        </div>
+      </section>
+
+      <section id="interactive">
+        <h2>Interactive Elements</h2>
+        <p>
+          Best practice: Use for progressive enhancement, ensure keyboard
+          accessibility.
+        </p>
+        <div class="example">
+          <details>
+            <summary>Click to expand</summary>
+            <p>Hidden content</p>
+          </details>
+          - Details/summary
+          <dialog open>
+            <p>Dialog content</p>
+            <button>Close</button>
+          </dialog>
+          - Dialog <progress value="50" max="100"></progress> - Progress bar
+          <meter value="0.8" min="0" max="1">80%</meter> - Meter
+        </div>
+      </section>
+
       <section>
-        <h2>Features</h2>
-        <ul>
-          <li>Header and Footer</li>
-          <li>Main Content Area</li>
-          <li>External CSS and JavaScript</li>
-        </ul>
+        <h2>Other Elements</h2>
+        <p>
+          Best practice: Use div and span sparingly, prefer semantic
+          alternatives.
+        </p>
+        <div class="example">
+          <div>Generic container</div>
+          <span>Inline container</span>
+          <noscript>JavaScript disabled message</noscript>
+        </div>
       </section>
     </main>
+
     <footer>
-      <p>&copy; 2024 Sample Page. All rights reserved.</p>
+      <p>&copy; 2026 HTML Tags Guide. All rights reserved.</p>
     </footer>
   </body>
 </html>
