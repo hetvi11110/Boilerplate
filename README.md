@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 Html 5
 =======
 # Boilerplate
